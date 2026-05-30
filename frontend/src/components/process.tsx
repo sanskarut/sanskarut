@@ -8,32 +8,32 @@ export function Process() {
   const steps = [
     {
       num: "01",
-      title: "Discovery & Strategy",
-      desc: "We dive deep into your target audience, analyze competitive platforms, write technical requirements, and define clear project milestones.",
+      title: "Strategic Discovery",
+      desc: "We define clear business goals, analyze competitor platforms, align stakeholders on measurable project KPIs, and establish an airtight scope.",
       icon: Compass,
     },
     {
       num: "02",
-      title: "High-Fidelity Design",
-      desc: "We build modern UX wireframes and high-fidelity user interface systems that perfectly reflect your brand goals.",
+      title: "Conversion Prototyping",
+      desc: "We design high-fidelity user interfaces and intuitive UX paths specifically planned to maximize user conversion and reduce drop-offs.",
       icon: Palette,
     },
     {
       num: "03",
-      title: "Production Development",
-      desc: "Our engineers craft modular, clean component libraries using typescript, Next.js, and efficient backend API hooks.",
+      title: "Agile Development",
+      desc: "Our engineers craft clean, scalable code using React, TypeScript, and Node.js, delivering fully functional, testable updates every week.",
       icon: Code2,
     },
     {
       num: "04",
-      title: "Rigorous QA & Testing",
-      desc: "Every logic cycle undergoes end-to-end user path simulation, unit tests, responsive testing, and performance audit checks.",
+      title: "Rigorous Testing & QA",
+      desc: "We run end-to-end user path simulations, cross-device compatibility tests, data security validations, and Core Web Vital audits.",
       icon: ShieldAlert,
     },
     {
       num: "05",
-      title: "Scalable Deployment",
-      desc: "We configure CDN networks, automate CI/CD pipeline builds, launch platforms, and set up live active node monitors.",
+      title: "Launch & Operational Handover",
+      desc: "We deploy with zero-downtime, set up active platform performance monitors, and hand over fully documented repositories with clean operational guidelines.",
       icon: Rocket,
     },
   ]

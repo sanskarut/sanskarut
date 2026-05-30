@@ -20,14 +20,19 @@ export function Footer() {
     company: [
       { name: "About Us", href: "/#why-choose-us" },
       { name: "API Reference", href: "/docs" },
-      { name: "Contact", href: "/#contact" },
-      { name: "Privacy Policy", href: "#" },
+      { name: "SLA & Pricing", href: "/pricing" },
+      { name: "Privacy & NDA", href: "/privacy" },
+      { name: "Contact Hub", href: "/#contact" },
     ],
     services: [
       { name: "Web Applications", href: "/#services" },
       { name: "SaaS Platforms", href: "/#services" },
       { name: "Custom Websites", href: "/#services" },
       { name: "Cloud Infrastructure", href: "/#services" },
+    ],
+    locations: [
+      { name: "Mumbai Hub", href: "/services/web-development-mumbai" },
+      { name: "India SaaS Hub", href: "/services/saas-development-india" },
     ],
   }
 
@@ -38,8 +43,8 @@ export function Footer() {
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-slate-900">
           
-          {/* Logo & Brand Pitch - Col 4 */}
-          <div className="md:col-span-4 space-y-6">
+          {/* Logo & Brand Pitch - Col 3 */}
+          <div className="md:col-span-3 space-y-6">
             <Link href="/" className="flex items-center space-x-2">
               <span className="text-2xl font-heading font-black tracking-tight text-white flex items-center">
                 sanskarut<span className="text-blue-500">.</span>
@@ -100,8 +105,22 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter Form - Col 4 */}
-          <div className="md:col-span-4 space-y-4">
+          {/* Links Column 3 (Locations) - Col 2 */}
+          <div className="md:col-span-2 space-y-4">
+            <h4 className="text-xs uppercase font-extrabold tracking-wider text-slate-200">Local Focus</h4>
+            <ul className="space-y-2.5 text-sm font-semibold">
+              {links.locations.map((l) => (
+                <li key={l.name}>
+                  <Link href={l.href} className="hover:text-white transition-colors">
+                    {l.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Newsletter Form - Col 3 */}
+          <div className="md:col-span-3 space-y-4">
             <h4 className="text-xs uppercase font-extrabold tracking-wider text-slate-200">Subscribe for Updates</h4>
             <p className="text-sm font-medium leading-relaxed">
               Get monthly newsletters containing code recommendations, performance advice, and strategic engineering write-ups.

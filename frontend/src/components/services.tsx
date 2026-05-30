@@ -2,8 +2,9 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { Code2, Laptop, ShieldCheck, Database, Layers, GitBranch } from "lucide-react"
+import { Code2, Laptop, ShieldCheck, Database, Layers, GitBranch, ArrowRight } from "lucide-react"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+import Link from "next/link"
 
 export function Services() {
   const offerings = [
@@ -12,6 +13,7 @@ export function Services() {
       description: "Rigorous, high-performance web products constructed with modern architectures like Next.js, React, and TypeScript. Optimized for load speed, scalability, and robust user interface operations.",
       icon: Code2,
       features: ["Next.js & Server Components", "REST & GraphQL API Endpoints", "Performance Optimization"],
+      link: "/services/web-development-mumbai",
     },
     {
       title: "Custom Websites",
@@ -24,6 +26,7 @@ export function Services() {
       description: "Multi-tenant business software engineering from database schemas to client dashboards. Built with resilient security policies and secure payment integrations.",
       icon: Layers,
       features: ["Stripe / Billing Hooks", "Secure JWT Authorization", "Interactive Data Analytics"],
+      link: "/services/saas-development-india",
     },
     {
       title: "Scalable Cloud Architecture",
@@ -106,8 +109,8 @@ export function Services() {
                     </CardDescription>
                   </CardHeader>
                   
-                  <CardContent className="pb-8">
-                    <ul className="space-y-2.5">
+                  <CardContent className="pb-8 flex-1 flex flex-col justify-between">
+                    <ul className="space-y-2.5 mb-6">
                       {item.features.map((feat, fIdx) => (
                         <li key={fIdx} className="flex items-center text-xs font-semibold text-slate-500 dark:text-slate-400">
                           <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2.5" />
@@ -115,6 +118,15 @@ export function Services() {
                         </li>
                       ))}
                     </ul>
+
+                    {item.link ? (
+                      <Link href={item.link} className="inline-flex items-center text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 group/link mt-auto">
+                        Explore Regional Service
+                        <ArrowRight className="w-3.5 h-3.5 ml-1.5 group-hover/link:translate-x-1 transition-transform" />
+                      </Link>
+                    ) : (
+                      <div className="h-4" />
+                    )}
                   </CardContent>
                 </Card>
               </motion.div>

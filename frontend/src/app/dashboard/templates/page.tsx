@@ -78,7 +78,7 @@ const WELCOME_HTML = `<!DOCTYPE html>
     <a href="{{ctaUrl}}" style="display:inline-block;background:#2563eb;color:#fff;text-decoration:none;padding:14px 32px;border-radius:10px;font-weight:700;font-size:14px;">{{ctaText}}</a>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`
@@ -99,7 +99,7 @@ const OTP_HTML = `<!DOCTYPE html>
     <p style="color:#94a3b8;font-size:12px;margin:28px 0 0;">If you did not request this, safely ignore this email.</p>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`
@@ -119,7 +119,7 @@ const THANK_YOU_HTML = `<!DOCTYPE html>
     <p style="color:#334155;font-size:15px;line-height:26px;margin:0 auto;max-width:440px;">{{message}}</p>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`
@@ -144,7 +144,7 @@ const PASSWORD_RESET_HTML = `<!DOCTYPE html>
     <a href="{{resetUrl}}" style="display:inline-block;background:#dc2626;color:#fff;text-decoration:none;padding:14px 32px;border-radius:10px;font-weight:700;font-size:14px;">Reset Password</a>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Team · All rights reserved.</p>
     <p style="color:#cbd5e1;font-size:10px;margin:6px 0 0;">If you have trouble clicking the button, copy this URL: {{resetUrl}}</p>
   </td></tr>
 </table></td></tr></table>
@@ -171,7 +171,7 @@ const NEWSLETTER_HTML = `<!DOCTYPE html>
     <a href="{{ctaUrl}}" style="display:inline-block;background:#2563eb;color:#fff;text-decoration:none;padding:12px 28px;border-radius:8px;font-weight:700;font-size:14px;">{{ctaText}}</a>
   </td></tr>
   <tr><td bgcolor="#0b192c" style="padding:24px 40px;text-align:center;">
-    <p style="color:#64748b;font-size:11px;margin:0;">© 2025 Sanskarut Tech Agency · <a href="{{unsubscribeUrl}}" style="color:#64748b;">Unsubscribe</a></p>
+    <p style="color:#64748b;font-size:11px;margin:0;">© 2025 Sanskarut Tech Team · <a href="{{unsubscribeUrl}}" style="color:#64748b;">Unsubscribe</a></p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`
@@ -213,7 +213,7 @@ const ORDER_CONFIRM_HTML = `<!DOCTYPE html>
     <a href="{{trackingUrl}}" style="display:inline-block;background:#059669;color:#fff;text-decoration:none;padding:14px 32px;border-radius:10px;font-weight:700;font-size:14px;">Track Your Order</a>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`
@@ -227,7 +227,7 @@ const INVOICE_HTML = `<!DOCTYPE html>
   <tr><td style="padding:40px;">
     <table width="100%"><tr>
       <td><h1 style="color:#0b192c;margin:0;font-size:24px;font-weight:900;">INVOICE</h1><p style="color:#64748b;margin:4px 0 0;font-size:13px;">#{{invoiceId}}</p></td>
-      <td align="right"><p style="color:#0b192c;font-weight:800;font-size:20px;margin:0;">SANSRUT</p><p style="color:#3b82f6;margin:2px 0 0;font-size:11px;font-weight:700;text-transform:uppercase;">Tech Agency</p></td>
+      <td align="right"><p style="color:#0b192c;font-weight:800;font-size:20px;margin:0;">SANSRUT</p><p style="color:#3b82f6;margin:2px 0 0;font-size:11px;font-weight:700;text-transform:uppercase;">Tech Team</p></td>
     </tr></table>
     <div style="height:1px;background:#f1f5f9;margin:24px 0;"></div>
     <table width="100%"><tr>
@@ -244,7 +244,7 @@ const INVOICE_HTML = `<!DOCTYPE html>
     <a href="{{paymentUrl}}" style="display:inline-block;background:#2563eb;color:#fff;text-decoration:none;padding:14px 32px;border-radius:10px;font-weight:700;font-size:14px;">Pay Now</a>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`
@@ -296,7 +296,7 @@ const APPOINTMENT_HTML = `<!DOCTYPE html>
     </div>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© 2025 Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`

@@ -22,7 +22,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Sanskar Bandgar",
     role: "Founder",
-    bio: "Pioneering highly scalable enterprise SaaS ecosystems, distributed cloud gateway interfaces, and production-grade web application architecture.",
+    bio: "Sanskar Bandgar has spent over a decade leading digital transformation initiatives, architecting critical transaction gateways, and scaling enterprise web applications. He has successfully designed systems facilitating over $25M in transactional volume, scaled SaaS infrastructures for global partners, and is dedicated to aligning software engineering directly with core business growth.",
     initials: "SB",
     image: "/images/sanskar.png",
     socials: {

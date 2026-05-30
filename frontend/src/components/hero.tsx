@@ -47,6 +47,21 @@ export function Hero() {
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-400/10 blur-[120px] pointer-events-none" />
       <div className="absolute top-[20%] right-[-10%] w-[35%] h-[35%] rounded-full bg-[#0b192c]/5 dark:bg-blue-500/5 blur-[120px] pointer-events-none" />
 
+      {/* Loop-animated floating 3D glassmorphic orb */}
+      <motion.div
+        className="absolute top-1/4 right-[8%] w-72 h-72 rounded-full bg-gradient-to-tr from-blue-500/10 via-indigo-500/10 to-teal-400/5 blur-xl pointer-events-none z-0"
+        animate={{
+          y: [0, -25, 0],
+          scale: [1, 1.06, 1],
+          rotate: [0, 180, 360]
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           className="text-center max-w-4xl mx-auto"
@@ -58,7 +73,7 @@ export function Hero() {
           <motion.div variants={itemVariants} className="inline-flex items-center space-x-2 bg-blue-50 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/50 px-3.5 py-1.5 rounded-full mb-6">
             <Cpu className="w-4 h-4 text-blue-600 dark:text-blue-400 animate-pulse" />
             <span className="text-xs sm:text-sm font-semibold tracking-wide text-blue-800 dark:text-blue-300">
-              Digital Engineering & Next-Gen Architecture
+              99.9% Platform Uptime · Guaranteed SLA Milestones
             </span>
           </motion.div>
 
@@ -67,9 +82,9 @@ export function Hero() {
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-7xl font-heading font-black tracking-tight text-[#0b192c] dark:text-white leading-[1.1] mb-6"
           >
-            Architecting high-performance{" "}
+            Engineering high-performance{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 bg-clip-text text-transparent">
-              Web & SaaS Solutions
+              Software Mapped to Business ROI
             </span>
           </motion.h1>
 
@@ -78,11 +93,11 @@ export function Hero() {
             variants={itemVariants}
             className="text-base sm:text-lg lg:text-xl text-slate-600 dark:text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed mb-8"
           >
-            We partner with visionary companies to design, build, and deploy production-grade software applications, custom websites, and digital ecosystems that scale.
+            We partner with scaling brands and enterprises to design, build, and deploy custom web applications and resilient SaaS platforms that slash operational overhead and accelerate revenue.
           </motion.p>
 
           {/* CTA Buttons */}
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Link
               href="#contact"
               className={cn(
@@ -103,6 +118,21 @@ export function Hero() {
             >
               Explore Services
             </Link>
+          </motion.div>
+
+          {/* Trust Indicators */}
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-slate-400 text-xs font-semibold mt-4 mb-16 pt-4 border-t border-slate-100 dark:border-slate-800 max-w-lg mx-auto"
+          >
+            <span className="flex items-center text-slate-500 dark:text-slate-400">
+              <span className="w-2 h-2 rounded-full bg-green-500 mr-2 animate-ping" />
+              Active SLA Platform Support
+            </span>
+            <span className="text-slate-300 dark:text-slate-700 hidden sm:inline">|</span>
+            <span className="flex items-center text-slate-500 dark:text-slate-400">
+              Trusted by 20+ scaling brands
+            </span>
           </motion.div>
         </motion.div>
 
@@ -201,6 +231,29 @@ export function Hero() {
 
           </div>
         </motion.div>
+      </div>
+
+      {/* Morphing smooth SVG looping wave at the section base */}
+      <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden pointer-events-none z-0 opacity-40">
+        <svg className="w-full h-full min-w-[1440px]" viewBox="0 0 1440 74" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <motion.path
+            d="M0 24 C 240 64, 480 4, 720 34 C 960 64, 1200 4, 1440 24 L 1440 74 L 0 74 Z"
+            fill="currentColor"
+            className="text-slate-100/70 dark:text-slate-900/30"
+            animate={{
+              d: [
+                "M0 24 C 240 64, 480 4, 720 34 C 960 64, 1200 4, 1440 24 L 1440 74 L 0 74 Z",
+                "M0 34 C 240 4, 480 64, 720 24 C 960 4, 1200 64, 1440 34 L 1440 74 L 0 74 Z",
+                "M0 24 C 240 64, 480 4, 720 34 C 960 64, 1200 4, 1440 24 L 1440 74 L 0 74 Z"
+              ]
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+        </svg>
       </div>
     </section>
   )
