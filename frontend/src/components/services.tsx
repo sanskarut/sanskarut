@@ -109,8 +109,8 @@ export function Services() {
                     </CardDescription>
                   </CardHeader>
                   
-                  <CardContent className="pb-8">
-                    <ul className="space-y-2.5">
+                  <CardContent className="pb-8 flex-1 flex flex-col justify-between">
+                    <ul className="space-y-2.5 mb-6">
                       {item.features.map((feat, fIdx) => (
                         <li key={fIdx} className="flex items-center text-xs font-semibold text-slate-500 dark:text-slate-400">
                           <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2.5" />
@@ -118,6 +118,15 @@ export function Services() {
                         </li>
                       ))}
                     </ul>
+
+                    {item.link ? (
+                      <Link href={item.link} className="inline-flex items-center text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 group/link mt-auto">
+                        Explore Regional Service
+                        <ArrowRight className="w-3.5 h-3.5 ml-1.5 group-hover/link:translate-x-1 transition-transform" />
+                      </Link>
+                    ) : (
+                      <div className="h-4" />
+                    )}
                   </CardContent>
                 </Card>
               </motion.div>
