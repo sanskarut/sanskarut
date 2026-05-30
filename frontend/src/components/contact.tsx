@@ -63,7 +63,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Email Us</div>
-                    <div className="text-sm font-semibold text-slate-200">hello@sanskarut.com</div>
+                    <div className="text-sm font-semibold text-slate-200">support@sanskarut.qzz.io</div>
                   </div>
                 </div>
 
@@ -73,7 +73,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Call Directly</div>
-                    <div className="text-sm font-semibold text-slate-200">+91 98765 43210</div>
+                    <div className="text-sm font-semibold text-slate-200">+91 87675 95276</div>
                   </div>
                 </div>
 
@@ -83,7 +83,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Headquarters</div>
-                    <div className="text-sm font-semibold text-slate-200">Mumbai, Maharashtra, India</div>
+                    <div className="text-sm font-semibold text-slate-200">Baramati, Pune, Maharashtra, India</div>
                   </div>
                 </div>
               </div>

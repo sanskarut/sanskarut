@@ -388,7 +388,7 @@ const DEFAULT_USAGE: UserUsage = {
     1
   ).toISOString(),
   name: "Sanskar Sharma",
-  email: "admin@sanskarut.com",
+  email: "admin@sanskarut.qzz.io",
 }
 
 const TAG_COLORS = [

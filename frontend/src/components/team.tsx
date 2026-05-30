@@ -21,7 +21,7 @@ interface TeamMember {
 const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Sanskar Bandgar",
-    role: "Founder & Chief Architect",
+    role: "Founder",
     bio: "Pioneering highly scalable enterprise SaaS ecosystems, distributed cloud gateway interfaces, and production-grade web application architecture.",
     initials: "SB",
     image: "/images/sanskar.png",
@@ -29,7 +29,7 @@ const TEAM_MEMBERS: TeamMember[] = [
       github: "https://github.com/sanskarut",
       linkedin: "https://linkedin.com/company/sanskarut",
       twitter: "https://twitter.com/sanskarut",
-      email: "mailto:sanskar@sanskarut.com",
+      email: "mailto:mr.sanskar@sanskarut.qzz.io",
     },
   },
 ]
