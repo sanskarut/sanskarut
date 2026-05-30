@@ -20,40 +20,16 @@ interface TeamMember {
 
 const TEAM_MEMBERS: TeamMember[] = [
   {
-    name: "Sanskar Sharma",
-    role: "Founder & Chief Strategist",
-    bio: "Pioneering highly scalable enterprise SaaS ecosystems, distributed gateway interfaces, and transaction life cycles.",
-    initials: "SS",
+    name: "Sanskar Bandgar",
+    role: "Founder & Chief Architect",
+    bio: "Pioneering highly scalable enterprise SaaS ecosystems, distributed cloud gateway interfaces, and production-grade web application architecture.",
+    initials: "SB",
     image: "/images/sanskar.png",
     socials: {
       github: "https://github.com/sanskarut",
       linkedin: "https://linkedin.com/company/sanskarut",
       twitter: "https://twitter.com/sanskarut",
       email: "mailto:sanskar@sanskarut.com",
-    },
-  },
-  {
-    name: "Priya Nair",
-    role: "Lead Systems Architect",
-    bio: "Specializing in high-performance Node processes, cloud database scaling, secure SMTP transit, and data streaming pipelines.",
-    initials: "PN",
-    image: "/images/priya.png",
-    socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      email: "mailto:priya@sanskarut.com",
-    },
-  },
-  {
-    name: "Kabir Verma",
-    role: "Principal UI/UX Architect",
-    bio: "Crafting beautiful glassmorphic visual interactions, premium responsive layouts, and highly interactive user states.",
-    initials: "KV",
-    image: "/images/kabir.png",
-    socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
     },
   },
 ]
@@ -88,20 +64,20 @@ export function Team() {
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-xs sm:text-sm font-semibold tracking-widest text-blue-600 dark:text-blue-400 uppercase mb-3 animate-pulse">
-            Meet the Engineers
+            Founder & Leadership
           </h2>
           <p className="text-3xl sm:text-4xl font-heading font-black tracking-tight text-[#0b192c] dark:text-white leading-tight">
-            Sanskarut Tech Team
+            Sanskarut Leadership
           </p>
           <div className="w-12 h-1 bg-blue-600 rounded mx-auto mt-4" />
           <p className="text-sm font-medium text-slate-500 dark:text-slate-400 max-w-xl mx-auto mt-5 leading-relaxed">
-            We are a group of system architects, UI designers, and SaaS specialists dedicated to deploying production-ready code.
+            Led by Sanskar Bandgar, we architect and deploy high-performance custom web applications, SaaS platforms, and secure digital systems.
           </p>
         </div>
 
         {/* Cards Deck */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
+          className="flex justify-center max-w-md mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -111,14 +87,14 @@ export function Team() {
             <motion.div
               key={member.name}
               variants={cardVariants}
-              className="group relative border border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-slate-900/60 p-8 rounded-3xl shadow-sm hover:shadow-[0_30px_60px_rgba(59,130,246,0.18)] hover:border-blue-500/30 dark:hover:border-blue-400/30 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between overflow-hidden"
+              className="group relative border border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-slate-900/60 p-8 sm:p-10 rounded-3xl shadow-sm hover:shadow-[0_30px_60px_rgba(59,130,246,0.18)] hover:border-blue-500/30 dark:hover:border-blue-400/30 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between overflow-hidden w-full"
             >
               {/* Subtle glassmorphic radial hover highlight inside card */}
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-blue-50/5 to-indigo-50/10 dark:to-indigo-950/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
               <div className="relative z-10">
                 {/* Visual Image Avatar Wrapper */}
-                <div className="w-20 h-20 mb-6 relative group/avatar shrink-0">
+                <div className="w-24 h-24 mb-6 relative group/avatar shrink-0 mx-auto">
                   {/* Outer glowing background blur */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 via-indigo-500 to-teal-400 rounded-2xl blur-md opacity-0 group-hover:opacity-50 group-hover:scale-110 transition-all duration-500" />
                   
@@ -135,19 +111,21 @@ export function Team() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-heading font-black text-[#0b192c] dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  {member.name}
-                </h3>
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mt-1">
-                  {member.role}
-                </p>
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mt-4 leading-relaxed">
-                  {member.bio}
-                </p>
+                <div className="text-center">
+                  <h3 className="text-2xl font-heading font-black text-[#0b192c] dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {member.name}
+                  </h3>
+                  <p className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider mt-1.5">
+                    Founder
+                  </p>
+                  <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mt-5 leading-relaxed text-center">
+                    {member.bio}
+                  </p>
+                </div>
               </div>
 
               {/* Social Media Link Icons */}
-              <div className="flex items-center space-x-4 pt-6 mt-6 border-t border-slate-100 dark:border-slate-800/80 relative z-10">
+              <div className="flex items-center justify-center space-x-6 pt-6 mt-8 border-t border-slate-100 dark:border-slate-800/80 relative z-10">
                 {member.socials.github && (
                   <motion.a
                     href={member.socials.github}
@@ -158,7 +136,7 @@ export function Team() {
                     whileHover={{ scale: 1.2, y: -2 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <Github className="w-4 h-4" />
+                    <Github className="w-5 h-5" />
                   </motion.a>
                 )}
                 {member.socials.linkedin && (
@@ -171,7 +149,7 @@ export function Team() {
                     whileHover={{ scale: 1.2, y: -2 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <Linkedin className="w-4 h-4" />
+                    <Linkedin className="w-5 h-5" />
                   </motion.a>
                 )}
                 {member.socials.twitter && (
@@ -184,7 +162,7 @@ export function Team() {
                     whileHover={{ scale: 1.2, y: -2 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <Twitter className="w-4 h-4" />
+                    <Twitter className="w-5 h-5" />
                   </motion.a>
                 )}
                 {member.socials.email && (
@@ -195,7 +173,7 @@ export function Team() {
                     whileHover={{ scale: 1.2, y: -2 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <Mail className="w-4 h-4" />
+                    <Mail className="w-5 h-5" />
                   </motion.a>
                 )}
               </div>
