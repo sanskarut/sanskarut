@@ -1,0 +1,17 @@
+# Sanskarut Tech Agency
+
+> Sanskarut Tech Agency is a premier digital engineering agency specializing in custom web applications, SaaS platforms, high-performance websites, and advanced software engineering solutions.
+
+## Core Expertise
+
+- **SaaS Platform Engineering**: Highly scalable distributed architectures, multi-tenant databases, transactional integrity, and custom cloud gateways.
+- **Custom Web Applications**: Built using modern frameworks (Next.js, React, Node.js, TypeScript) and responsive glassmorphic styling (Tailwind CSS, Framer Motion).
+- **Technical SEO & Speed**: Standard implementation of semantic HTML structure, JSON-LD schemas (Organization, FAQPage), optimized static rendering, fast core web vitals, and explicit robot directives.
+- **Systems Architecture**: Node processes, distributed API routing, database optimization (PostgreSQL, MongoDB), SMTP engines, and server maintenance.
+
+## Navigation & Entry Points
+
+- [Homepage](https://sanskarut.qzz.io/): Overview of tech stacks, design portfolios, development methodologies, leadership, client feedback, and contact endpoints.
+- [Technical Documentation](https://sanskarut.qzz.io/docs): Full reference architecture documentation, developer gateway configurations, and key-management guides.
+- [Developer Dashboard](https://sanskarut.qzz.io/dashboard): Client portal managing live developer nodes, API keys, rate limits, and SMTP transaction metrics.
+- [Founder & Contact Info](https://sanskarut.qzz.io/#team): Direct details of Sanskar Bandgar, Founder & Chief Architect of Sanskarut Tech Agency. Contact email: `sanskar@sanskarut.qzz.io`.

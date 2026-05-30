@@ -119,7 +119,7 @@ export default function TeamLoginPage() {
                     type="email"
                     required
                     autoComplete="email"
-                    placeholder="admin@sanskarut.com"
+                    placeholder="admin@sanskarut.qzz.io"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full pl-10 pr-4 py-3 bg-slate-800/60 border border-slate-700/60 rounded-xl text-sm font-semibold text-white placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500/60 transition-all"
