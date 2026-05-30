@@ -127,10 +127,10 @@ function renderEmailTemplate(title, bodyContent, ctaText, ctaUrl) {
               <tr>
                 <td bgcolor="#f8fafc" style="padding: 24px 40px; border-top: 1px solid #f1f5f9; text-align: center;">
                   <p style="color: #64748b; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 500; line-height: 18px; margin: 0;">
-                    You are receiving this transaction log via active node instances of Sanskarut Tech Agency.
+                    You are receiving this transaction log via active node instances of Sanskarut Tech Team.
                   </p>
                   <p style="color: #94a3b8; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 500; margin: 10px 0 0 0;">
-                    &copy; ${new Date().getFullYear()} Sanskarut Tech Agency. All rights reserved.
+                    &copy; ${new Date().getFullYear()} Sanskarut Tech Team. All rights reserved.
                   </p>
                 </td>
               </tr>

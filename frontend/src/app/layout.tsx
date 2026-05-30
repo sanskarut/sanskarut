@@ -17,10 +17,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sanskarut.qzz.io"),
-  title: "Sanskarut Tech Agency | Web Applications & SaaS Development",
-  description: "Sanskarut Tech Agency is a premier digital engineering agency specializing in custom web applications, SaaS platforms, high-performance websites, and advanced tech solutions.",
-  keywords: ["Sanskarut", "tech agency", "web application development", "SaaS platforms", "custom websites", "software engineering", "Next.js agency", "Tailwind CSS"],
-  authors: [{ name: "Sanskarut Tech Agency" }],
+  title: "Sanskarut Tech Team | Web Applications & SaaS Development",
+  description: "Sanskarut Tech Team is a premier digital engineering team specializing in custom web applications, SaaS platforms, high-performance websites, and advanced tech solutions.",
+  keywords: ["Sanskarut", "tech team", "web application development", "SaaS platforms", "custom websites", "software engineering", "Next.js team", "Tailwind CSS"],
+  authors: [{ name: "Sanskarut Tech Team" }],
   alternates: {
     canonical: "/",
   },
@@ -38,23 +38,23 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Sanskarut Tech Agency | Custom Web & SaaS Solutions",
+    title: "Sanskarut Tech Team | Custom Web & SaaS Solutions",
     description: "Architecting high-performance web applications and scalable digital ecosystems for start-ups and enterprises.",
     type: "website",
     url: "https://sanskarut.qzz.io",
-    siteName: "Sanskarut Tech Agency",
+    siteName: "Sanskarut Tech Team",
     images: [
       {
         url: "/images/sanskar.png",
         width: 800,
         height: 600,
-        alt: "Sanskarut Tech Agency Logo",
+        alt: "Sanskarut Tech Team Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sanskarut Tech Agency | Custom Web & SaaS Solutions",
+    title: "Sanskarut Tech Team | Custom Web & SaaS Solutions",
     description: "Architecting high-performance web applications and scalable digital ecosystems.",
     images: ["/images/sanskar.png"],
   },
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Sanskarut Tech Agency",
+  "name": "Sanskarut Tech Team",
   "url": "https://sanskarut.qzz.io",
   "logo": "https://sanskarut.qzz.io/favicon.ico",
   "sameAs": [

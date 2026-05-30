@@ -73,7 +73,7 @@ const WELCOME_HTML = `<!DOCTYPE html>
     <a href="{{ctaUrl}}" style="display:inline-block;background:#2563eb;color:#fff;text-decoration:none;padding:14px 32px;border-radius:10px;font-weight:700;font-size:14px;">{{ctaText}}</a>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© ${new Date().getFullYear()} Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© ${new Date().getFullYear()} Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`
@@ -94,7 +94,7 @@ const OTP_HTML = `<!DOCTYPE html>
     <p style="color:#94a3b8;font-size:12px;margin:28px 0 0;">If you didn't request this, you can safely ignore this email.</p>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© ${new Date().getFullYear()} Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© ${new Date().getFullYear()} Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`
@@ -114,7 +114,7 @@ const THANK_YOU_HTML = `<!DOCTYPE html>
     <p style="color:#334155;font-size:15px;line-height:26px;margin:0 auto;max-width:440px;">{{message}}</p>
   </td></tr>
   <tr><td bgcolor="#f8fafc" style="padding:24px 40px;text-align:center;border-top:1px solid #f1f5f9;">
-    <p style="color:#94a3b8;font-size:11px;margin:0;">© ${new Date().getFullYear()} Sanskarut Tech Agency · All rights reserved.</p>
+    <p style="color:#94a3b8;font-size:11px;margin:0;">© ${new Date().getFullYear()} Sanskarut Tech Team · All rights reserved.</p>
   </td></tr>
 </table></td></tr></table>
 </body></html>`

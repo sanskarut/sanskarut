@@ -2,8 +2,9 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { Code2, Laptop, ShieldCheck, Database, Layers, GitBranch } from "lucide-react"
+import { Code2, Laptop, ShieldCheck, Database, Layers, GitBranch, ArrowRight } from "lucide-react"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+import Link from "next/link"
 
 export function Services() {
   const offerings = [
@@ -12,6 +13,7 @@ export function Services() {
       description: "Rigorous, high-performance web products constructed with modern architectures like Next.js, React, and TypeScript. Optimized for load speed, scalability, and robust user interface operations.",
       icon: Code2,
       features: ["Next.js & Server Components", "REST & GraphQL API Endpoints", "Performance Optimization"],
+      link: "/services/web-development-mumbai",
     },
     {
       title: "Custom Websites",
@@ -24,6 +26,7 @@ export function Services() {
       description: "Multi-tenant business software engineering from database schemas to client dashboards. Built with resilient security policies and secure payment integrations.",
       icon: Layers,
       features: ["Stripe / Billing Hooks", "Secure JWT Authorization", "Interactive Data Analytics"],
+      link: "/services/saas-development-india",
     },
     {
       title: "Scalable Cloud Architecture",

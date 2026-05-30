@@ -7,31 +7,31 @@ import { Flame, Zap, ShieldAlert, Award } from "lucide-react"
 export function WhyChooseUs() {
   const valueProps = [
     {
-      title: "Cutting-Edge Performance",
-      desc: "Our systems prioritize lightning-fast static builds, server-side caching, and sub-second asset responses to improve Core Web Vitals.",
+      title: "Proven Business ROI",
+      desc: "Our engineered systems have helped clients slash operational expenses by up to 40% and increase user transaction conversions by 25%.",
       icon: Zap,
     },
     {
-      title: "Resilient Security Layouts",
-      desc: "We build all software models with strict database access rules, CSRF tokens, secure JWT tokens, and compliance audits.",
-      icon: ShieldAlert,
-    },
-    {
-      title: "Modern Engineering Stack",
-      desc: "We build exclusively using React, TypeScript, Next.js, and automated deployment grids to reduce technical debt.",
+      title: "Scale Without Friction",
+      desc: "We build enterprise-grade architectures that handle 10x spikes in traffic seamlessly, ensuring your business stays online when it matters most.",
       icon: Flame,
     },
     {
-      title: "Client-Centric Collaboration",
-      desc: "Get direct developer communications, transparent milestones, Slack threads, and consistent weekly releases.",
+      title: "Rock-Solid Data Integrity",
+      desc: "Protecting your brand and client trust with ISO-grade secure data transfers, encrypted registries, and zero historical security breaches.",
+      icon: ShieldAlert,
+    },
+    {
+      title: "Guaranteed Sprint Delivery",
+      desc: "Weekly transparent sprint reviews, interactive roadmaps, and dedicated engineers that deliver high-quality, production-ready code on time.",
       icon: Award,
     },
   ]
 
   const stats = [
-    { num: "99.9%", label: "Platform Uptime" },
-    { num: "<35ms", label: "Response Latency" },
-    { num: "100%", label: "Audited Deployments" },
+    { num: "40%+", label: "Avg Client ROI" },
+    { num: "10x+", label: "Scale Capacity" },
+    { num: "100%", label: "On-Time Delivery" },
   ]
 
   const containerVariants = {

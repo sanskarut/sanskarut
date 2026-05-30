@@ -5,7 +5,7 @@ export interface FAQItem {
 
 export const FAQ_ITEMS: FAQItem[] = [
   {
-    question: "What services does Sanskarut Tech Agency specialize in?",
+    question: "What services does Sanskarut Tech Team specialize in?",
     answer: "We specialize in custom web application engineering, scalable SaaS platform architecture, high-performance API integrations, and cloud database optimization. Our engineers handle everything from concept designs to production-grade deployment and ongoing systems maintenance.",
   },
   {
