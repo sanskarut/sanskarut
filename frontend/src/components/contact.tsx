@@ -33,20 +33,17 @@ export function Contact() {
           bodyContent: `<h1>Project Inquiry</h1><p><strong>Name:</strong> ${formData.name}</p><p><strong>Email:</strong> ${formData.email}</p><p><strong>Message:</strong> ${formData.message}</p>`
         })
       })
-      const data = await res.json()
-      if (data) {
-        const res2 = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API_URL}/api/v1/emails/send`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
-          },
-          body: JSON.stringify({
-            to: formData.email,
-            templateSlug: "website-contact"
-          })
+      const res2 = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API_URL}/api/v1/emails/send`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
+        },
+        body: JSON.stringify({
+          to: formData.email,
+          templateSlug: "website-contact"
         })
-      }
+      })
     } catch (error) {
       console.log(error)
     }
