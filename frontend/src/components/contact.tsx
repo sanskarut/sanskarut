@@ -20,7 +20,7 @@ export function Contact() {
     setStatus("submitting")
     // Mocking server action call
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/emails/send`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API_URL}/api/v1/emails/send`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +35,7 @@ export function Contact() {
       })
       const data = await res.json()
       if (data) {
-        const res2 = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/emails/send`, {
+        const res2 = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API_URL}/api/v1/emails/send`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -210,8 +210,8 @@ export function Contact() {
                           type="button"
                           onClick={() => setFormData({ ...formData, projectType: opt.val })}
                           className={`py-3.5 rounded-xl text-xs font-bold transition-all border cursor-pointer ${formData.projectType === opt.val
-                              ? "bg-blue-50 dark:bg-blue-950 border-blue-500 text-blue-600 dark:text-blue-400"
-                              : "bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50"
+                            ? "bg-blue-50 dark:bg-blue-950 border-blue-500 text-blue-600 dark:text-blue-400"
+                            : "bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50"
                             }`}
                         >
                           {opt.label}
