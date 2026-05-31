@@ -16,10 +16,40 @@ export function Contact() {
       setStatus("error")
       return
     }
-    
+
     setStatus("submitting")
     // Mocking server action call
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/emails/send`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
+        },
+        body: JSON.stringify({
+          to: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
+          subject: "Project Inquiry",
+          title: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
+          bodyContent: `<h1>Project Inquiry</h1><p><strong>Name:</strong> ${formData.name}</p><p><strong>Email:</strong> ${formData.email}</p><p><strong>Message:</strong> ${formData.message}</p>`
+        })
+      })
+      const data = await res.json()
+      if (data) {
+        const res2 = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/emails/send`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
+          },
+          body: JSON.stringify({
+            to: formData.email,
+            templateSlug: "website-contact"
+          })
+        })
+      }
+    } catch (error) {
+      console.log(error)
+    }
     setStatus("success")
     setFormData({ name: "", email: "", projectType: "webapp", message: "" })
   }
@@ -27,7 +57,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 bg-slate-50 dark:bg-slate-900/40 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-xs sm:text-sm font-semibold tracking-widest text-blue-600 dark:text-blue-400 uppercase mb-3">
@@ -179,11 +209,10 @@ export function Contact() {
                           key={opt.val}
                           type="button"
                           onClick={() => setFormData({ ...formData, projectType: opt.val })}
-                          className={`py-3.5 rounded-xl text-xs font-bold transition-all border cursor-pointer ${
-                            formData.projectType === opt.val
+                          className={`py-3.5 rounded-xl text-xs font-bold transition-all border cursor-pointer ${formData.projectType === opt.val
                               ? "bg-blue-50 dark:bg-blue-950 border-blue-500 text-blue-600 dark:text-blue-400"
                               : "bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50"
-                          }`}
+                            }`}
                         >
                           {opt.label}
                         </button>
@@ -251,7 +280,7 @@ export function Contact() {
             loading="lazy"
             title="Sanskarut Location Map"
           />
-          
+
           {/* Ambient Overlay to blend map frame with aesthetics */}
           <div className="absolute inset-0 bg-blue-500/5 pointer-events-none" />
         </div>
