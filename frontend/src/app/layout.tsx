@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Sanskarut Tech Team",
     images: [
       {
-        url: "/images/sanskar.png",
+        url: "/images/logo.png",
         width: 800,
         height: 600,
         alt: "Sanskarut Tech Team Logo",
