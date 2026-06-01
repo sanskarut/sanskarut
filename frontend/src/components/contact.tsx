@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Send, CheckCircle2, ShieldCheck, Mail, MapPin, Phone } from "lucide-react"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import { Map,MapMarker } from "./ui/map"
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", projectType: "webapp", message: "" })
@@ -110,7 +111,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Headquarters</div>
-                    <div className="text-sm font-semibold text-slate-200">Baramati, Pune, Maharashtra, India</div>
+                    <div className="text-sm font-semibold text-slate-200">Satara, Maharashtra, India</div>
                   </div>
                 </div>
               </div>
@@ -270,14 +271,9 @@ export function Contact() {
 
         {/* Premium Location Map Section ("mapcn") */}
         <div className="mt-16 rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-md relative h-80 bg-slate-900">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60652.667726026724!2d74.5389096461165!3d18.173505560400855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3a03bdb59287f%3A0x36e4fb47fb8d8a9d!2sBaramati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1780073423035!5m2!1sen!2sin"
-            className="w-full h-full border-0 grayscale dark:invert dark:contrast-90 dark:opacity-85"
-            allowFullScreen={false}
-            loading="lazy"
-            title="Sanskarut Location Map"
-          />
-
+        <Map
+center={[73.99333, 17.68589]}
+zoom={12}/>
           {/* Ambient Overlay to blend map frame with aesthetics */}
           <div className="absolute inset-0 bg-blue-500/5 pointer-events-none" />
         </div>

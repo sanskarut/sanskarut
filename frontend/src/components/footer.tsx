@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 import Link from "next/link"
-import { Send, Twitter, Linkedin, Github } from "lucide-react"
+import { Send, Twitter, Linkedin, Github, Instagram, Facebook } from "lucide-react"
 
 export function Footer() {
   const [email, setEmail] = useState("")
@@ -57,8 +57,9 @@ export function Footer() {
             {/* Social Grid */}
             <div className="flex space-x-4">
               {[
-                { icon: Twitter, href: "https://twitter.com/sanskarut" },
-                { icon: Linkedin, href: "https://linkedin.com/company/sanskarut" },
+                { icon: Twitter, href: "https://x.com/sanskarut" },
+                { icon: Instagram, href: "https://instagram.com/sanskarut.tech"},
+                {icon: Facebook, href:"https://facebook.com/sanskarut"},
                 { icon: Github, href: "https://github.com/sanskarut" },
               ].map((social, sIdx) => {
                 const Icon = social.icon

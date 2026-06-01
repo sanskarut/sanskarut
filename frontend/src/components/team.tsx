@@ -2,7 +2,7 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { Github, Linkedin, Twitter, Mail } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, Instagram } from "lucide-react"
 
 interface TeamMember {
   name: string
@@ -11,6 +11,7 @@ interface TeamMember {
   initials: string
   image: string
   socials: {
+    instagram: string | undefined
     twitter?: string
     linkedin?: string
     github?: string
@@ -21,15 +22,15 @@ interface TeamMember {
 const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Sanskar Bandgar",
-    role: "Founder",
-    bio: "Sanskar Bandgar has spent over a decade leading digital transformation initiatives, architecting critical transaction gateways, and scaling enterprise web applications. He has successfully designed systems facilitating over $25M in transactional volume, scaled SaaS infrastructures for global partners, and is dedicated to aligning software engineering directly with core business growth.",
+    role: "Founder & Full Stack Developer",
+    bio: "Sanskar Bandgar is the Founder of Sanskarut Tech Team and an Information Technology Engineering student with a passion for web development, software engineering, and digital innovation. He started Sanskarut Tech Team to help small businesses, startups, and students build modern websites, web applications, and digital solutions at affordable costs. His focus is on creating fast, user-friendly, and scalable technology that helps organizations establish and grow their online presence.",
     initials: "SB",
     image: "/images/sanskar.png",
     socials: {
-      github: "https://github.com/sanskarut",
-      linkedin: "https://linkedin.com/company/sanskarut",
-      twitter: "https://twitter.com/sanskarut",
-      email: "mailto:mr.sanskar@sanskarut.qzz.io",
+      github: "https://github.com/mrsanskar19",
+      instagram: "https://instagram.com/officialsanskarbandgar",
+      linkedin: "https://linkedin.com/in/sanskar-bandgar-719bb336a",
+      email: "mailto:mr.sanskar19@gmail.com",
     },
   },
 ]
@@ -126,6 +127,19 @@ export function Team() {
 
               {/* Social Media Link Icons */}
               <div className="flex items-center justify-center space-x-6 pt-6 mt-8 border-t border-slate-100 dark:border-slate-800/80 relative z-10">
+                 {member.socials.instagram && (
+                  <motion.a
+                    href={member.socials.instagram}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-slate-400 hover:text-black dark:hover:text-white transition-colors"
+                    aria-label="Instagram Account"
+                    whileHover={{ scale: 1.2, y: -2 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </motion.a>
+                )}
                 {member.socials.github && (
                   <motion.a
                     href={member.socials.github}
