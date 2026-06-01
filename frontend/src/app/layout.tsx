@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sanskarut Tech Team | Custom Web & SaaS Solutions",
     description: "Architecting high-performance web applications and scalable digital ecosystems.",
-    images: ["/images/sanskar.png"],
+    images: ["/images/logo.png"],
   },
 };
 
@@ -68,13 +68,14 @@ const organizationSchema = {
   "logo": "https://sanskarut.qzz.io/favicon.ico",
   "sameAs": [
     "https://github.com/sanskarut",
-    "https://linkedin.com/company/sanskarut",
-    "https://twitter.com/sanskarut"
+    "https://instagram.com/sanskarut.tech",
+    "https://www.facebook.com/sanskarut/",
+    "https://x.com/sanskarut"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer service",
-    "email": "mr.sanskar@sanskarut.qzz.io",
+    "email": "support@sanskarut.qzz.io",
     "availableLanguage": ["en"]
   },
   "founder": {
