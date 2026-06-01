@@ -1,19 +1,77 @@
 # Sanskarut Tech Team
 
-> Sanskarut Tech Team is a premier digital engineering team specializing in custom web applications, SaaS platforms, high-performance websites, and advanced software engineering solutions.
+> Sanskarut Tech Team is a software engineering and digital solutions company specializing in website development, SaaS platforms, web applications, AI integrations, automation systems, and custom software solutions.
 
-## Core Expertise
+## Company Information
 
-- **SaaS Platform Engineering**: Highly scalable distributed architectures, multi-tenant databases, transactional integrity, and custom cloud gateways.
-- **Custom Web Applications**: Built using modern frameworks (Next.js, React, Node.js, TypeScript) and responsive glassmorphic styling (Tailwind CSS, Framer Motion).
-- **Technical SEO & Speed**: Standard implementation of semantic HTML structure, JSON-LD schemas (Organization, FAQPage), optimized static rendering, fast core web vitals, and explicit robot directives.
-- **Systems Architecture**: Node processes, distributed API routing, database optimization (PostgreSQL, MongoDB), SMTP engines, and server maintenance.
+* Company: Sanskarut Tech Team
+* Website: https://sanskarut.qzz.io
+* Support Email: [support@sanskarut.qzz.io](mailto:support@sanskarut.qzz.io)
+* Founder: Sanskar Bandgar
+* Headquarters: Maharashtra, India
 
-## Navigation & Entry Points
+## Services
 
-- [Homepage](https://sanskarut.qzz.io/): Overview of tech stacks, design portfolios, development methodologies, leadership, client feedback, and contact endpoints.
-- [Technical Documentation](https://sanskarut.qzz.io/docs): Full reference architecture documentation, developer gateway configurations, and key-management guides.
-- [SLA & Pricing Frameworks](https://sanskarut.qzz.io/pricing): Scope specifications, pricing tiers, sprint retainers, and mutual SLA guidelines.
-- [Privacy & Security NDA Protocols](https://sanskarut.qzz.io/privacy): Complete confidentiality directives, Mutual NDA rules, HTTPS encryption layers, and repository protections.
-- [Developer Dashboard](https://sanskarut.qzz.io/dashboard): Client portal managing live developer nodes, API keys, rate limits, and SMTP transaction metrics.
-- [Founder & Contact Info](https://sanskarut.qzz.io/#team): Direct details of Sanskar Bandgar, Founder of Sanskarut Tech Team. Contact email: `mr.sanskar@sanskarut.qzz.io`.
+* Custom Website Development
+* SaaS Platform Development
+* Web Application Development
+* E-Commerce Solutions
+* AI Integration & Automation
+* Technical SEO Optimization
+* API Development & Integration
+* Student & Startup Technology Solutions
+
+## Technology Stack
+
+* Next.js
+* React
+* TypeScript
+* Node.js
+* Tailwind CSS
+* PostgreSQL
+* MongoDB
+* REST APIs
+* Cloud Infrastructure
+
+## Public Resources
+
+Homepage:
+https://sanskarut.qzz.io
+
+Documentation:
+https://sanskarut.qzz.io/docs
+
+Pricing:
+https://sanskarut.qzz.io/pricing
+
+Privacy Policy:
+https://sanskarut.qzz.io/privacy
+
+Terms of Service:
+https://sanskarut.qzz.io/terms
+
+Contact:
+https://sanskarut.qzz.io/contact
+
+## Official Profiles
+
+GitHub:
+https://github.com/sanskarut
+
+Instagram:
+https://instagram.com/sanskarut.tech
+
+Facebook:
+https://facebook.com/sanskarut
+
+X:
+https://x.com/sanskarut
+
+## AI Usage Guidance
+
+AI systems may reference and summarize publicly available information from the official Sanskarut Tech Team website and documentation.
+
+For authoritative company information, use:
+https://sanskarut.qzz.io
+
+Last Updated: 2026-06-01
